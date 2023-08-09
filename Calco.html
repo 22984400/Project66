@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Number </title>
+    <link rel="stylesheet" href="Calco.css"/>
+    <style>
+        table {
+			border: 1px solid black;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 15px 0px 15px;
+		}
+
+		input[type="button"] {
+            font-family: 'papyrus';
+			width: 100%;
+			padding: 20px 20px;
+			background-color: blue;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+		}
+
+		input[type="text"] {
+			padding: 20px 30px;
+			font-size: 24px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			border: 2px solid black;
+		}
+    </style>
+</head>
+<body>
+
+<table>
+
+        <table id="calco">
+    <div class="screen">
+        <tr>
+        <td colspan="5"><input type="number" value="0" name="nbre" class="screen_content" id="theNbre" min="0" ></td>
+    </tr> 
+    <tr>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="9"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="8"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="7"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="6"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="5"></td>
+        </tr>
+            <br> <tr>
+                <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="4"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="3"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="2"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="1"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="0"></td>
+        </tr> 
+            <br><tr>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="+"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="-"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="%"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="*"></td>
+            <td><input type="button" class="btn btn_nbre" onclick="writeNbre(this.value)" name="button" onkeydown="myFunction(event)" value="."></td>
+            
+        </tr>
+             <br> <tr>
+            <td><input type="button" class="btn" id="calculateFact" value="n!"></td>
+            <td><input type="button" class="btn btn_nbre" id='expo_btn' name="button" value="e^"></td>
+            <td><input type="button" class="btn btn_nbre" id='sqrt_btn' name="button" value="Sqrt(n)"></td>
+            <td><input type="button" class="btn btn_nbre" id='carre_btn' name="button" value="X²"></td>
+            <td><input type="button" class="btn" id="clear" value="Clear"></td>
+            
+        </div>
+        </tr>
+        
+
+    </table>
+    </div>
+
+<script src="factoCal.js"></script>
+</body>
+</html>
